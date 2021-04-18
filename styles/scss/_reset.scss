@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body {
+  background: #f8f8f8;
+}
+
+button {
+  border: none;
+  outline: none;
+  color: white;
+  font-weight: 500;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  font-size: 16px;
+}
+
+.container {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 3%;
+}
+
+.color-pink {
+  color: $color-primary !important;
+}
+
+.bg-pink {
+  background: $color-primary !important;
+  transition: 0.5s ease;
+}
+
+.bg-opacity {
+  background: rgba(0, 0, 0, 0);
+  transition: 0.5s ease;
+}

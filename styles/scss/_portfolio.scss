@@ -1,0 +1,55 @@
+.portfolio {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  .portfolio-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .project {
+    padding-bottom: 10px;
+    border-radius: 8px;
+    background: white;
+    width: 368px;
+    max-width: 100%;
+    img {
+      width: 368px;
+    }
+  }
+  img[class^='btn-arrow'] {
+    cursor: pointer;
+    display: inline-block;
+  }
+
+  .title,
+  .description {
+    margin-left: 20px;
+  }
+  .title {
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  .description {
+    font-weight: 400;
+    font-size: 16px;
+    color: #8c94a8;
+    margin-top: 5px;
+  }
+  .dots-wrapper {
+    display: none;
+  }
+  .dot {
+    width: 16px;
+    height: 16px;
+    background: #9b9b9b;
+    border-radius: 50%;
+    margin-right: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .dot:hover {
+    background: $color-primary;
+  }
+}

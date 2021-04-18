@@ -1,0 +1,18 @@
+.about {
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+  .description-wrapper {
+    margin-left: 30px;
+  }
+  .title {
+    text-transform: uppercase;
+    color: $color-primary;
+    font-weight: 400;
+  }
+  .description {
+    line-height: 32px;
+    font-size: 16px;
+    margin-top: 16px;
+  }
+}

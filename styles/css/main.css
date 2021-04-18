@@ -1,0 +1,112 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; text-decoration: none; list-style-type: none; }
+
+body { background: #f8f8f8; }
+
+button { border: none; outline: none; color: white; font-weight: 500; }
+
+img { max-width: 100%; }
+
+p { font-size: 16px; }
+
+.container { max-width: 1280px; width: 100%; margin: 0 auto; padding: 0 3%; }
+
+.color-pink { color: #ec008c !important; }
+
+.bg-pink { background: #ec008c !important; transition: 0.5s ease; }
+
+.bg-opacity { background: rgba(0, 0, 0, 0); transition: 0.5s ease; }
+
+header { padding: 30px 0; position: fixed; width: 100%; }
+
+header .menu-wrapper { display: flex; justify-content: space-between; align-items: center; }
+
+.menu { display: flex; }
+
+.menu li { margin-left: 30px; text-transform: uppercase; }
+
+.menu li a { color: white; }
+
+.icon-hamburguer { display: none; cursor: pointer; }
+
+.logo { cursor: pointer; z-index: 998; }
+
+.introduction { background: url(../../images/05.jpg) 40% 65%; min-height: 100vh; color: white; }
+
+.introduction .description-wrapper { padding-top: 200px; }
+
+.introduction .logo { z-index: 2; }
+
+.introduction .title { font-size: 118px; font-weight: 500; line-height: 120px; }
+
+.introduction .description { font-size: 18px; max-width: 500px; width: 100%; }
+
+.introduction .btn { background-color: #ec008c; padding: 10px 30px; margin-top: 40px; border-radius: 4px; cursor: pointer; }
+
+.trending-wrapper { margin-top: 150px; display: flex; width: 100%; }
+
+.trending-wrapper article { width: 270px; }
+
+.trending-wrapper article p { padding: 0 20px; line-height: 32px; }
+
+.trending-wrapper article:nth-of-type(1) { text-align: right; }
+
+.trending-wrapper article:nth-of-type(2) { border-right: 1px solid white; border-left: 1px solid white; }
+
+.trending-wrapper article:nth-of-type(3) { border-right: 1px solid white; border-left: 1px solid white; }
+
+.portfolio { margin-top: 100px; display: flex; align-items: center; }
+
+.portfolio .portfolio-wrapper { width: 100%; display: flex; justify-content: space-evenly; }
+
+.portfolio .project { padding-bottom: 10px; border-radius: 8px; background: white; width: 368px; max-width: 100%; }
+
+.portfolio .project img { width: 368px; }
+
+.portfolio img[class^='btn-arrow'] { cursor: pointer; display: inline-block; }
+
+.portfolio .title, .portfolio .description { margin-left: 20px; }
+
+.portfolio .title { font-weight: 500; font-size: 20px; margin-top: 20px; }
+
+.portfolio .description { font-weight: 400; font-size: 16px; color: #8c94a8; margin-top: 5px; }
+
+.portfolio .dots-wrapper { display: none; }
+
+.portfolio .dot { width: 16px; height: 16px; background: #9b9b9b; border-radius: 50%; margin-right: 16px; cursor: pointer; transition: 0.3s; }
+
+.portfolio .dot:hover { background: #ec008c; }
+
+.about { display: flex; align-items: center; margin-top: 100px; }
+
+.about .description-wrapper { margin-left: 30px; }
+
+.about .title { text-transform: uppercase; color: #ec008c; font-weight: 400; }
+
+.about .description { line-height: 32px; font-size: 16px; margin-top: 16px; }
+
+footer.container { padding-top: 40px; padding-bottom: 40px; }
+
+footer.container p { font-size: 11px; color: #908c8c; }
+
+@media screen and (min-width: 1001px) and (max-width: 1250px) { .portfolio img[class^='btn-arrow'] { display: none; }
+  .portfolio .portfolio-wrapper { flex-direction: column; justify-content: center; align-items: center; }
+  .portfolio .project { width: 500px; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 20px; margin-bottom: 20px; }
+  .portfolio .project img { text-align: center; margin: 0 auto; } }
+
+@media screen and (max-width: 1000px) { .trending-wrapper { display: none; }
+  .portfolio { flex-direction: column; }
+  .portfolio div.project:not(.first), .portfolio img[class^='btn-arrow'] { display: none; }
+  .portfolio .dots-wrapper { display: flex; margin-top: 30px; }
+  .about { flex-direction: column; }
+  .about .description-wrapper { margin-top: 30px; } }
+
+@media screen and (max-height: 625px) { .trending-wrapper { margin-top: 50px; } }
+
+@media screen and (max-width: 600px) { .icon-hamburguer { display: block; z-index: 999; }
+  .menu { position: fixed; top: -110%; right: 0; height: 100vh; width: 100%; margin: 0 auto; background-color: #ec008c; flex-direction: column; text-align: center; padding-top: 130px; transition: 0.8s ease-in-out; }
+  .menu li { margin-bottom: 30px; }
+  .menu li a { font-size: 20px; }
+  .menu.active { top: 0; }
+  .introduction .title { font-size: 90px; }
+  .portfolio { margin-top: 30px; }
+  .about { margin-top: 60px; } }
