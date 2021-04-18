@@ -3,7 +3,7 @@
 
 &#xa0;
 
-  <!-- <a href="https://weatherapp.netlify.app">Demo</a> -->
+   <a href="https://danielfilh0.github.io/idx">Deployment</a> 
 </div>
 
 <h1 align="center">Index Digital</h1>
